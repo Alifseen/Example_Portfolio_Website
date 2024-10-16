@@ -1,4 +1,5 @@
 import streamlit as st
+from EmailSender import send_email  ## 6. We import the module we just created to send email on form submit. Make sure it is in the same folder as the file that is calling it.
 
 st.header("Contact Me")
 
@@ -15,4 +16,15 @@ with st.form(key="contact form"):
 
 ## 5. Test the button by printing out a statement
 if formButton:
-    print("pressed")
+    ## 7. We add subject, and the email body to the send email function
+    send_email(
+        subject="Someone Wants to contact you from your portfolio website",
+        body=f"""
+Their email is {userEmail}
+Their Message:
+{userMessage}
+"""
+    )
+
+    ## 8. Add a notification for visitor that their email was sent successfully
+    st.info("Your Message was sent successfully")
