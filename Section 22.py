@@ -9,7 +9,7 @@ import pandas as pd ## 7. Import pandas
 st.set_page_config(layout="wide")
 
 ## 1. Create Columns
-left, right = st.columns(2, vertical_alignment="top", gap="medium", )
+left, right = st.columns(2, vertical_alignment="top", gap="medium", )  ## 16. We modify this create another column in between left and right and provide a list of relative size of each column, instead of the number of columns
 
 ## 2. Introduction Element Left Column
 left.image("Files/Images/photo.png")
@@ -29,7 +29,8 @@ Feel Free to reach out using the contact form on Contact Page
 st.write(textline)
 
 ## 6. Columns for showcase projects
-appColLeft, appColRight = st.columns(2)
+appColLeft, empty_col, appColRight = st.columns([1.5, 0.5, 1.5]) ## 16. We modify this  line to adding space between the two columns by creating another column in between left and right and provide a list of relative size of each column, instead of the number of columns.
+
 
 ## 8. Read the data CSV by defining the seperator
 dataFrame = pd.read_csv("Files/data.csv", sep=";")
