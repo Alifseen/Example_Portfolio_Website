@@ -2,13 +2,13 @@
 We convert this code into a module that we can reuse.
 For that we can either convert it manually or use pycharms refactor "extract method" feature
 """
-import smtplib, ssl ## 1. Import smtplib and ssl standard modules
+import smtplib, ssl, os ## 1. Import smtplib and ssl and os standard modules
 
 ## 10. We convert this code into a function, but we need to add parameters manually.
 def send_email(subject, body):
     ## 2. We then save the username and password in variables
     username = "alifseen@gmail.com"
-    password = "xshw awpj sfue pyuy"
+    password = os.getenv("EMAILSENDERPASS")  ## 12. It is not safe to store sensitive information in a script, best way to do it is to store it in an environment variable on your computer and then simply call it here by making sure the name is same. in this case, "EMAILSENDERPASS"
     ## 3. We save email service providers smtp server address and port
     emailHost = "smtp.gmail.com"
     hostPort = 465

@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from pages.EmailSender import send_email
+from EmailSender import send_email
 
 df = pd.read_csv("Exercises/Files/topics.csv")
 

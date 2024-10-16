@@ -19,3 +19,9 @@ iterrows()
 
 Section 23:
 When Sending email with python using gmail, make sure 2 factor is on so you can create an app password.
+
+envirnment variable
+os
+.getenv
+create user variable in windows environment variables same name as mentioned in OS.
+Note that you have to restart pycharm for os to find that variable
