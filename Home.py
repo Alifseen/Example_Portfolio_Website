@@ -57,6 +57,8 @@ with appColLeft:
             appSourceCodeLink = rows["url"]
             st.page_link(appSourceCodeLink, label="Source Code")
 
+            st.divider()
+
 ## 15. We repeat the same process for right column
 with appColRight:
     for index, rows in dataFrame.iterrows():
@@ -75,7 +77,7 @@ with appColRight:
             ## Alternatively you can use the st.write method as follows:
             # st.write(f"[Source Code]({appSourceCodeLink})")
 
-
+            st.divider()
 
 
 ## Note: You can also use list slicing instead of step 10 by using the "dataFrame[:10].iterrows()" in the left column for loop for first 10 apps, and "dataFrame[10:].iterrows()" for last 10 apps in right column. Remember to remove the modulo if else statement.
