@@ -18,3 +18,4 @@ sep=
 iterrows()
 
 Section 23:
+When Sending email with python using gmail, make sure 2 factor is on so you can create an app password.
