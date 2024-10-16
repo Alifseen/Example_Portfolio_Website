@@ -17,3 +17,10 @@ description = """
 Description here
 """
 right.info(description)
+
+## Text below the columns.
+st.subheader("Below you can find some of the Apps I have built in Python")
+textline = """
+Feel Free to reach out using the contact form on Contact Page
+"""
+st.write(textline)
