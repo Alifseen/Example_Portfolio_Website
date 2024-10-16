@@ -9,3 +9,10 @@ Simple data can be retrieved from JSON (for nested daa) or CSV (for plain data)
 It is not convenient to manually write data in JSON
 
 It is a good idea to have a variable with docstring if you will add text to it dynamically, this way, you dont have to worry about breaklines
+
+
+Section 22:
+pandas
+read_csv()
+sep=
+iterrows()
