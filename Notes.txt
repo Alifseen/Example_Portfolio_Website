@@ -1,0 +1,9 @@
+Section 21:
+Figma
+A prototype is a prelimanary version of the app, just the visuals of what an app will look like. It is necessary to create a prototype before you start coding because it gives a representation of what you will build. You can use Figma for this.
+
+App Data Source
+Data is simple when it is not relational.
+Simple data does not require using an SQL database.
+Simple data can be retrieved from JSON (for nested daa) or CSV (for plain data)
+It is not convenient to manually write data in JSON
